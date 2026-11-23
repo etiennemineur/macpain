@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr" data-macpaint-touch>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="MacPain">
+<title>MacPain Touch — dessin bitmap sur iPhone</title>
+<meta name="description" content="MacPain, le MacPaint adapté au tactile : 20 outils, 38 trames, 13 polices bitmap, zoom à deux doigts et export PNG. Sans compte.">
+<link rel="canonical" href="https://etienne.design/tools/macpain/touch.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="MacPain Touch">
+<meta property="og:description" content="L’atelier bitmap adapté à l’iPhone : dessin au doigt, trames, polices originales et PNG.">
+<meta property="og:url" content="https://etienne.design/tools/macpain/touch.html">
+<meta property="og:image" content="https://etienne.design/tools/macpain/macpaint-touch-1665eb878038.png">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:alt" content="MacPain en portrait sur iPhone : dessin, trames et texte bitmap">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="MacPain Touch">
+<meta name="twitter:description" content="20 outils, 38 trames, 13 polices bitmap ; interface tactile en portrait et export PNG.">
+<meta name="twitter:image:alt" content="MacPain en portrait sur iPhone : dessin, trames et texte bitmap">
+<meta name="twitter:image" content="https://etienne.design/tools/macpain/macpaint-touch-1665eb878038.png">
+<link rel="manifest" href="touch.webmanifest">
+<link rel="apple-touch-icon" href="touch-icon-180.png">
+<link rel="stylesheet" href="touch.css?v=dev">
+</head>
+<body>
+<div id="touch-app">
+ <div id="touch-window" role="region" aria-label="Fenêtre MacPain">
+ <header id="touch-header" data-macpaint-controls>
+  <canvas id="touch-titlebar" role="img" aria-label="Barre de titre de la fenêtre : untitled"></canvas>
+  <nav id="touch-menubar" aria-label="Menus MacPain">
+   <button id="menu-apple" aria-label="MacPain — à propos">M</button>
+   <button id="touch-file">File</button>
+   <button id="menu-edit">Edit</button>
+   <button id="menu-goodies">Goodies</button>
+   <button id="menu-font">Font</button>
+   <button id="menu-size">Size</button>
+   <button id="menu-style">Style</button>
+  </nav>
+  <div id="touch-dropdown" hidden aria-label="Commandes du menu"></div>
+ </header>
+ <main id="touch-stage" aria-label="Plan de travail">
+  <canvas id="touch-paper" aria-label="Feuille de dessin noir et blanc, 576 par 720 pixels" tabindex="0"></canvas>
+  <button id="finish-polygon" hidden data-macpaint-controls>Terminer la forme</button>
+  <div id="touch-message" role="status" aria-live="polite"></div>
+ </main>
+ <div id="touch-options" data-macpaint-controls>
+  <button id="pick-tool" aria-label="Choisir parmi les 20 outils"><canvas id="current-tool" width="25" height="21" aria-hidden="true"></canvas><span id="tool-name">Pinceau</span><span aria-hidden="true">⌄</span></button>
+  <button id="pick-pattern" aria-label="Choisir parmi les 38 trames"><canvas id="current-pattern" width="24" height="24" aria-hidden="true"></canvas><span>Trame</span></button>
+  <button id="pick-settings" aria-label="Épaisseur et réglages"><span id="settings-label">1 px</span></button>
+ </div>
+ <div id="touch-zoom" data-macpaint-controls>
+  <span class="history-actions"><button id="touch-undo" aria-label="Annuler" title="Annuler"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5 3 11l6 6M3 11h11a6 6 0 0 1 6 6"/></svg></button><button id="touch-redo" aria-label="Rétablir" title="Rétablir"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5 6 6-6 6m6-6H10a6 6 0 0 0-6 6"/></svg></button><button id="touch-help" aria-label="Aide aux gestes tactiles">?</button></span>
+  <span class="zoom-actions"><button id="zoom-out" aria-label="Réduire le zoom">−</button><button id="zoom-fit" aria-label="Recentrer la feuille">×2</button><button id="zoom-in" aria-label="Augmenter le zoom">+</button></span>
+ </div>
+ <nav id="touch-tools" aria-label="Outils rapides" data-macpaint-controls></nav>
+ </div>
+</div>
+<dialog id="touch-sheet" data-macpaint-controls aria-labelledby="sheet-title">
+ <header class="sheet-header"><h2 id="sheet-title"></h2><button id="sheet-close" aria-label="Fermer le panneau">Fermer</button></header>
+ <div id="sheet-body"></div>
+ <footer id="sheet-footer"></footer>
+</dialog>
+<canvas id="screen" width="512" height="342" hidden aria-hidden="true"></canvas>
+<input id="file" type="file" accept="image/*" hidden data-macpaint-controls>
+<script src="classic-data.js?v=dev"></script>
+<script src="satire.js?v=dev"></script>
+<script src="macpaint.js?v=dev"></script>
+<script src="touch.js?v=dev"></script>
+</body>
+</html>

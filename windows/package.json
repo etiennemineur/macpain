@@ -1,0 +1,13 @@
+{
+  "name": "macpain-windows-outils",
+  "private": true,
+  "description": "Outils de construction de MacPain pour Windows (voir LISEZ-MOI.md). L'application elle-même est dans app/.",
+  "scripts": {
+    "essai": "electron app"
+  },
+  "devDependencies": {
+    "@electron/packager": "20.3.0",
+    "electron": "45.3.0",
+    "png-to-ico": "3.0.2"
+  }
+}

@@ -1,0 +1,116 @@
+# Crédits et provenance — sons de MacPaint
+
+## Rires et applaudissements réels (archive.org — USC Cinema Archive)
+
+Source : enregistrements historiques de foule des studios radio/TV de l'USC
+Cinema Archive, hébergés sur archive.org, sous licence CC0 / Domaine public.
+Collection d'origine : https://archive.org/details/usc-cinema (sous-collections
+Red Library Crowds, Gold Tape Crowds et Gold Tape Horns).
+
+Contenu de la banque : foule uniquement (rires, applaudissements, réactions).
+Aucune musique.
+
+Chaque prise réelle est un one-shot de ~2,5 s découpé à la fenêtre la plus
+énergique de son enregistrement, puis normalisé (loudnorm I=-16, TP=-1.5) et
+fondu (3 ms en entrée, 500 ms en sortie), encodé MP3 96 kbit/s.
+
+Pour varier les réactions, 42 prises distinctes sont livrées, numérotées par
+ordre d'énergie décroissante :
+
+- **Rires** (`laugh_01` → `laugh_21`, 21 prises) issus de : Theater Audience
+  Laughing et Theater Laughter (Gold Tape 28/29/30), Audience Laughing, Very
+  Large Group Laughing, Intimate Group Laughing (Red Library Crowds Indoor),
+  et Laughing Radio Show.
+- **Applaudissements** (`applause_01` → `applause_14`, 14 prises) issus de :
+  Applause and Whistles, Happy Crowd Applause, Medium Crowd Applause, Group
+  Applause, One or Two People Clapping (Red Library Crowds Applause / Gold
+  Tape Crowds).
+- **Réactions festives** (`cheer_01` → `cheer_07`, 7 prises) : whoops, sifflets,
+  rires mêlés, « hip hip hourra », cuivres comiques et exclamations de foule
+  (Red Library Crowds / Gold Tape Horns).
+- `clap_real_ironic.mp3` : applaudissement ironique (une ou deux personnes),
+  Red Library Crowds Indoor.
+
+## Bruitages d'action synchronisés (synthèse, CC0)
+
+Générés localement par synthèse procédurale (DSP, scripts
+`sound/synth/make_action_sounds.py` et `make_tool_sounds.py`), sans source
+externe :
+
+- **Sélection** (un son abstrait et rigolo par pictogramme) : `sel_lasso`,
+  `sel_marquee`, `sel_eraser`, `sel_pencil`, `sel_brush`, `sel_bucket`,
+  `sel_spray`, `sel_line`, `sel_rect`, `sel_rrect`, `sel_oval`, `sel_polygon`,
+  `sel_freeform`, `sel_text`, `sel_hand`.
+- **Dessin** (une boucle de texture par outil) : `draw_pencil`, `draw_brush`,
+  `draw_spray`, `draw_eraser`, `draw_line`, `draw_rect`, `draw_rrect`,
+  `draw_oval`, `draw_polygon`, `draw_freeform`.
+- **Ponctuations** : `type_click` (frappe de lettre), `shape_pop` (forme
+  terminée), `oh_no` (« oh non » descendant, réaction de la gomme).
+
+## Bruitages comiques (synthèse, CC0)
+
+Fichiers WAV générés par synthèse procédurale (DSP), fournis avec le pack
+« SFX jeu satirique » sous CC0 1.0 : gameshow_sad_trombone, gameshow_win_ding,
+festive_rimshot_badumtss, festive_party_horn, festive_kazoo_fanfare,
+festive_confetti_pop. Ce sont des ponctuations sonores (trombone, clochette,
+caisse claire, cotillon, kazoo), pas de la foule.
+
+## Scripts de fabrication
+
+- `sound/reel_cc0/telecharger_sons_archive.sh` : téléchargement des 15 prises
+  originales depuis archive.org.
+- `sound/reel_cc0/cut_one_shots.py` : découpe à la fenêtre la plus énergique,
+  normalisation et fondu, encodage MP3.
+
+## Surprises, suspense et rythme (synthèse, CC0)
+
+Générés localement par `sound/synth/make_surprise_sounds.py`, sans source
+externe : `fx_drumroll` (roulement de caisse claire en boucle exacte, pendant
+les longs traits), `fx_cymbal` (cymbale à la fin du long trait), `fx_boing`
+(simple point), `fx_glug` (pot de peinture), `fx_scratch` (annulations en
+rafale), `fx_slide_up` / `fx_slide_down` (sifflet à coulisse), `fx_marimba`
+(note rejouée sur une gamme pentatonique quand les gestes s'enchaînent),
+`fx_kaching` (enregistrement), `fx_crickets` (grillons du silence gêné),
+`fx_quack`, `fx_pouet`, `fx_cuckoo`, `fx_wolf` (surprises aléatoires).
+
+## Stupeur de la salle (archive.org — USC Cinema Archive, CC0)
+
+`gasp_01` → `gasp_03` : trois réactions découpées dans l'enregistrement
+« crowd gasp » déjà présent dans `sound/reel_cc0/` (mêmes réglages que les
+autres prises réelles : loudnorm I=-16, fondu de sortie 500 ms, MP3 96 kbit/s).
+
+## Style console 8 bits (synthèse, CC0)
+
+Depuis le 10 novembre 2026, tous les fichiers WAV servis (`sel_*`, `draw_*`,
+`fx_*`, `type_click`, `shape_pop`, `oh_no`, `festive_*`, `gameshow_*`) sont
+régénérés par `sound/synth/make_8bit_sounds.py` : onde carrée, triangle en
+escalier et bruit pseudo-aléatoire, sans source externe. Les versions
+précédentes sont conservées dans `sound/classique/` (non publiées).
+
+## Nightmare! et disquette (synthèse, CC0)
+
+`nm_shot`, `nm_pump`, `nm_growl`, `nm_roar`, `nm_pain`, `nm_door` et `fx_floppy`
+sont générés par `sound/synth/make_nightmare_sounds.py` (synthèse, puis passage
+en 11 kHz / 8 bits). Sons originaux : aucun n'est extrait d'un jeu existant.
+La musique gabber du niveau Nightmare! est fabriquée en direct par `satire.js`.
+`draw_eraser.wav` (gomme réaliste) vient de `sound/synth/make_eraser_sound.py`.
+
+## Prises écartées : paroles audibles (11 novembre 2026)
+
+Seize prises réelles ont été retirées du logiciel parce qu'on y entend des mots :
+annonces de prise de l'archive (« 28 », « 41 », « Number 40 », « 42 », « 43 »,
+« Sequence 21A, take 1 », « Very good. One more. »), « hip hip hooray », et
+quelques exclamations. Repérage par reconnaissance vocale locale (Whisper,
+modèles medium, small et base), recoupé entre les trois modèles. Fichiers
+conservés hors publication dans `sound/retires-paroles/` : applause_13,
+laugh_01, laugh_07, laugh_18, laugh_19, laugh_21, cheer_01 à cheer_07,
+gasp_01 à gasp_03. Il reste 16 rires, 13 applaudissements et l'applaudissement
+ironique, sans aucune phrase.
+
+`nm_cock`, `nm_reload`, `nm_shells`, `nm_casings`, `nm_pistol`, `nm_chaingun`, `nm_double`, `nm_plasma`,
+`nm_ricochet`, `nm_whizz`, `nm_impact`, `nm_rocket`, `nm_barrel`, `nm_bigboom` : rechargements, balles et
+explosions du niveau Nightmare!, sons originaux synthétisés (sound/synth/make_nightmare_sounds.py), CC0.
+Aucun son n'est repris d'un jeu existant.
+
+`nm_gabber_loop.mp3` : musique du niveau Nightmare!, boucle « Loop Hardcore Gabber, Extreme Fast »
+fournie par Étienne Mineur (source et licence à préciser par lui).

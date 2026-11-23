@@ -1,0 +1,20 @@
+.DS_Store
+__pycache__/
+node_modules/
+dist/
+# éléments d'autres auteurs, non redistribuables (voir LICENCES-TIERS.md)
+classic-data.js
+macpaint.png
+fonts/Chicago.*
+sound/nm_gabber_loop.mp3
+reference/resources/
+reference/forks/
+reference/*.dsk
+reference/*.zip
+reference/*.png
+# applications construites
+macos/MacPain.app/
+macos/telechargement/
+*.dmg
+windows/app/web/
+windows/out/

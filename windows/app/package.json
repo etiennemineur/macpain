@@ -1,0 +1,9 @@
+{
+  "name": "macpain",
+  "productName": "MacPain",
+  "version": "1.0.0",
+  "description": "MacPain — réplique satirique de MacPaint 1.5 (1985)",
+  "author": "Étienne Mineur",
+  "main": "main.js",
+  "private": true
+}

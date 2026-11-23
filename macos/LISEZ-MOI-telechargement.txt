@@ -1,0 +1,121 @@
+MACPAIN 1.0 — LISEZ-MOI / READ ME
+(English version below)
+
+====================================================================
+FRANÇAIS
+====================================================================
+
+MacPain est une application expérimentale, artistique et satirique
+d'Étienne Mineur : un hommage au MacPaint de 1984, qui se retourne peu
+à peu contre vous. Cinq niveaux de difficulté, de « I'm Too Young To
+Die » (le logiciel classique, sage et muet) à « Nightmare! » (les
+fenêtres s'enfuient sur le bureau, sur une musique gabber).
+
+Elle est gratuite. Installez-la sans crainte :
+
+- Elle est signée par son éditeur (les éditions volumiques) et
+  notarisée par Apple : Apple l'a analysée et n'y a trouvé aucun
+  logiciel malveillant.
+- Elle ne se connecte pas à Internet, ne collecte aucune donnée et
+  n'installe rien d'autre qu'elle-même.
+- Elle ne touche à aucun de vos fichiers. Elle n'écrit que les images
+  que vous choisissez d'enregistrer.
+
+INSTALLATION
+
+1. Ouvrez le fichier MacPain-1.0.dmg (double-clic).
+2. Dans la fenêtre qui s'ouvre, glissez l'icône MacPain sur le dossier
+   Applications.
+3. Éjectez le disque « MacPain » (clic droit, puis Éjecter).
+4. Lancez MacPain depuis le dossier Applications ou le Launchpad.
+
+AU PREMIER LANCEMENT
+
+macOS affiche : « MacPain est une app téléchargée depuis Internet.
+Voulez-vous vraiment l'ouvrir ? ». C'est le message normal pour toute
+application qui ne vient pas de l'App Store : cliquez sur Ouvrir.
+
+Si macOS refuse d'ouvrir l'application (« Apple n'a pas pu vérifier… »
+ou « développeur non identifié ») :
+
+1. Ouvrez le menu Pomme, puis Réglages Système.
+2. Allez dans Confidentialité et sécurité.
+3. Descendez jusqu'à la ligne qui parle de MacPain et cliquez sur
+   « Ouvrir quand même ».
+4. Confirmez avec votre mot de passe ou Touch ID.
+
+BON À SAVOIR
+
+- Il faut macOS 12 ou plus récent (Mac Apple Silicon ou Intel).
+- À partir du niveau 3, des fenêtres-pièges apparaissent ; aux niveaux
+  4 et 5, les fenêtres se déplacent, tournent et changent de taille
+  toutes seules. C'est voulu. Pour tout arrêter : Commande-Q.
+- Attention : le niveau « Nightmare! » contient des images qui
+  clignotent et bougent très vite, et une musique forte. Il est
+  déconseillé aux personnes photosensibles ou épileptiques.
+- Pour désinstaller : glissez MacPain du dossier Applications vers la
+  corbeille.
+
+MacPain n'est ni édité ni approuvé par Apple. MacPaint et Macintosh
+sont des marques d'Apple Inc.
+
+Version dans le navigateur : https://etienne.design/tools/macpain/
+Étienne Mineur — https://etienne.design
+
+====================================================================
+ENGLISH
+====================================================================
+
+MacPain is an experimental, artistic and satirical application by
+Étienne Mineur: a tribute to the 1984 MacPaint that gradually turns
+against you. Five difficulty levels, from "I'm Too Young To Die" (the
+classic program, quiet and well-behaved) to "Nightmare!" (the windows
+run away across your desktop, to a gabber soundtrack).
+
+It is free. You can install it with confidence:
+
+- It is signed by its publisher (les éditions volumiques) and
+  notarized by Apple: Apple scanned it and found no malicious software.
+- It does not connect to the Internet, collects no data and installs
+  nothing other than itself.
+- It does not touch any of your files. It only writes the pictures you
+  choose to save.
+
+INSTALLATION
+
+1. Open the file MacPain-1.0.dmg (double-click).
+2. In the window that opens, drag the MacPain icon onto the
+   Applications folder.
+3. Eject the "MacPain" disk (right-click, then Eject).
+4. Launch MacPain from the Applications folder or Launchpad.
+
+ON FIRST LAUNCH
+
+macOS shows: "MacPain is an app downloaded from the Internet. Are you
+sure you want to open it?". This is the normal message for any
+application that does not come from the App Store: click Open.
+
+If macOS refuses to open the application ("Apple could not verify…" or
+"unidentified developer"):
+
+1. Open the Apple menu, then System Settings.
+2. Go to Privacy & Security.
+3. Scroll down to the line about MacPain and click "Open Anyway".
+4. Confirm with your password or Touch ID.
+
+GOOD TO KNOW
+
+- Requires macOS 12 or later (Apple Silicon or Intel Mac).
+- From level 3, trap windows pop up; at levels 4 and 5 the windows
+  move, rotate and resize by themselves. This is intended. To stop
+  everything: Command-Q.
+- Warning: the "Nightmare!" level contains fast flashing, moving
+  images and loud music. It is not recommended for photosensitive or
+  epileptic people.
+- To uninstall: drag MacPain from the Applications folder to the Trash.
+
+MacPain is neither published nor endorsed by Apple. MacPaint and
+Macintosh are trademarks of Apple Inc.
+
+Browser version: https://etienne.design/tools/macpain/
+Étienne Mineur — https://etienne.design
